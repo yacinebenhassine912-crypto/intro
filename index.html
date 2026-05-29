@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BUZZLE II</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <!-- PAGE 1 -->
+  <div id="page1" class="page active">
+    <div class="page1-inner">
+      <img src="image1.jpeg" alt="bar scene" id="heroImage" />
+      <button class="btn-main" id="startBtn">Go talk to her</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="page2" class="page">
+    <div class="bg-image" id="page2bg"></div>
+    <div class="scene-overlay"></div>
+
+    <div class="convo-container">
+      <!-- LEFT: Response area -->
+      <div class="response-panel" id="responsePanel">
+        <div class="response-label">SHE SAYS</div>
+        <div class="response-text" id="responseText"></div>
+      </div>
+
+      <!-- RIGHT: Options area -->
+      <div class="options-panel" id="optionsPanel">
+        <div class="options-label">YOU SAY</div>
+        <div class="options-list" id="optionsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: END -->
+  <div id="page3" class="page end-page">
+    <div class="end-inner">
+      <div class="end-text">end.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
